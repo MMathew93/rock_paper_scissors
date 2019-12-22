@@ -8,3 +8,6 @@ I added a prompt for funsies and finished the computer selection. Trying to do p
 Still working on it, taking a break...
 12/20 3pm
 Came back and am starting to try and answer the Human selcetion porrtion and te if else section for what beats what, I did use a students solution to shed some light in regards to the variables, however mine is still not working, I want to refrain at looking at others examples from here on out.
+
+12/22 9:30am
+I have been trying to debug this code for 2 hours and I'm no where closer. I added butons to work with to make it eaier but I believe they are defeating the purpose of that, I decided to seperate them into the index and just make a javascript file specifically for my JS. I am gonna do laundry for a bit.
