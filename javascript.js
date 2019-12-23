@@ -56,3 +56,43 @@ const playRound= function playRound(playerSelection, computerSelection) {
 return playRound;
 }
 
+/*
+###########SWITCH ATTEMPT###############//
+switch(playerSelection +"|"+ computerSelection) {
+    case "Rock|Scissors":
+        text= "Rock beats Scissors, you won!"
+    case "Paper|Rock":
+        text= "Paper beats Rock, you won!"
+    case "Scissors|Paper":
+        text= "Scissors beats Paper, you won!"
+    playerScore++;
+    //Return 'Win';
+   
+
+    case "Rock|Rock":
+        text= "Oh darn no one wins, let's try that again!"
+    case "Paper|Paper":
+        text= "Oh darn no one wins, let's try that again!"
+    case "Scissors|Scissors":
+        text= "Oh darn no one wins, let's try that again!"
+    //Return 'Draw';
+   
+
+    case "Scissors|Rock":
+        text= "Scissors loses to Rock, you lose!"
+    case "Rock|Paper":
+        text= "Rock loses to Paper, you lose!"
+    case "Paper|Scissors":
+        text= "Paper loses to Scissors, you lose!"
+    computerScore++;
+    //Return 'Lose';
+    }
+
+}
+*/
+
+
+//function computerPlay() {
+    //const computerOptions= ["Rock", "Paper", "Scissors"];
+    //const computerNumber= Math.floor(Math.random()* 3);
+    //const computerChoice= computerOptions[computerNumber];
