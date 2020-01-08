@@ -1,73 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>ROCK PAPER SCISSORS SHOOT!</title>
+  <head>
+    <link rel="stylesheet" href= "style.css">
+  </head>
 <body>
-    <button onclick="playRound(playerSelection, computerSelection)">Rock, Does not work</button>
-    <button onclick="playRound(playerSelection, computerSelection)">Paper, Does not work</button>
-    <button onclick="playRound(playerSelection, computerSelection)">Scissors, Does not work</button>
-    <script>
-let computerScore= 0;
-let playerScore= 0;
+    
+    <div class= "gameBox">
+      <h1>Let's play a game of Rock, Paper Scissors!</h1>
+      <p id="firstP">You'll be playing against me</p>
+      <img class="animated-gif" src="giphy.gif">
+      <p id="outcome">Let's Play!</p>
+      <div id="playerScore">0:0</div>
+      <p id="secondP">First to three wins!</p>
+    </div>
 
-//Message Prompt asking to play
-let message= prompt("Let's play a game of Rock, Paper, Scissors!","");
-    if(message== 'Yes') {
-        alert("Alright! Select your choice and we'll play!","");
-    } else if (message== 'No') {
-        alert("Ah man, maybe next time?");
-    } else {
-        alert("Cancelled.")
-    }
-//Entire Game
-//function game() {
-
-//Computers random choice
-function computerPlay() {
-   const choice= ["rock", "paper", "scissors"];
-   let randomChoice= choice[Math.floor(Math.random()*choice.length)];
-   return (randomChoice);
-}
-//Single round of game, player choice is in console
-function playRound(playerInput) {
-    let playerSelection= playerInput.toLowerCase();
-    let computerSelection= computerPlay();
-    if(playerSelection=== computerSelection){
-        alert("It is a Tie, try again!");
-        return;
-    }  
-    //check for rock
-    if(playerSelection=== "rock") {
-        if(computerSelection=== "scissors") {
-            alert("Rock beats Scissors, you win!");
-            playerScore++;
-        } else {
-            alert("Paper beats Rock, you lose!")
-            computerScore++;
-        }
-    }
-        //check for paper
-        if(playerSelection=== "paper") {
-            if(computerSelection=== "scissors") {
-            alert("Scissor beats paper, you lose!");
-            computerScore++;
-            }else {
-                alert("Paper beats Rock, you win!")
-                playerScore++;
-    }
-}
-    //check for scissors
-        if(playerSelection=== "scissors"){
-            if(computerSelection=== "rock") {
-            alert("Rock beats Scissors, you lose!");
-            computerScore++;
-            }else{
-                alert("Scissors beats Paper, you win!")
-                playerScore++;
-    }
-}
-console.log(playerScore);
-console.log(computerScore);
-}
-</script>
+    <div class= "buttonContainer">
+      <button id="rock" onclick=rockFunction()>Rock</button>
+      <button id="paper" onclick=paperFunction()>Paper</button>
+      <button id="scissors" onclick=scissorsFunction()>Scissors</button>
+    </div>
+    <div class= "resetContainer">
+      <button id="reset" onclick=resetFunction()>Reset Game</button>
+    </div>
+    
 </body>
+<script src="javascript.js"> </script>
 </html>

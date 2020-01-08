@@ -1,0 +1,86 @@
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: #3E6387;
+    margin: 20px;
+    padding: 0;
+}
+
+.gameBox {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1% 2% 1% 2%;
+    margin: auto;
+    margin-top: 12%;
+    width: 33%;
+    border-radius: 15px;
+    border: 5px solid gray;
+}
+.animated-gif {
+    width:150px;
+    height:150px;
+}
+
+
+#firstP {
+    font-size: 24px;
+    margin: 1% 0 0 0;
+}
+
+#outcome {
+    font-size: 22px;
+    margin: 0 0 0 0;
+}
+
+#playerScore {
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    margin: 1% 0 1% 0;
+    
+}
+
+#secondP {
+    font-size: 16px;
+    margin: 0 0 0 0;
+}
+
+.buttonContainer{
+display: block;
+text-align: center;
+padding: .3%;
+margin: auto;
+width: 20%;
+
+}
+
+#rock, #paper, #scissors {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    margin: auto auto auto auto;
+    width: 30%;
+    
+}
+
+.resetContainer {
+    display: block;
+    text-align: center;
+    padding: .3%;
+    margin: auto;
+    width: 10%;
+    
+}
+
+#reset {
+    align-items: center;
+    justify-content: center;
+    margin: auto auto auto auto;
+    width: 100%;
+    height: 45%;
+    
+}

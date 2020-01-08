@@ -1,6 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ROCK PAPER SCISSORS SHOOT!</title>
+<body>
+    <button onclick="playRound(playerSelection, computerSelection)">Rock, Does not work</button>
+    <button onclick="playRound(playerSelection, computerSelection)">Paper, Does not work</button>
+    <button onclick="playRound(playerSelection, computerSelection)">Scissors, Does not work</button>
+    <script>
 let computerScore= 0;
 let playerScore= 0;
 
+//Message Prompt asking to play
+let message= prompt("Let's play a game of Rock, Paper, Scissors!","");
+    if(message== 'Yes') {
+        alert("Alright! Select your choice and we'll play!","");
+    } else if (message== 'No') {
+        alert("Ah man, maybe next time?");
+    } else {
+        alert("Cancelled.")
+    }
 //Entire Game
 /*function game(playerScore, computerScore) {
     for(playerScore= 0; playerScore>= 3; playerScore++) {
@@ -62,3 +79,6 @@ function playRound(playerInput) {
 console.log(playerScore);
 console.log(computerScore);
 }
+</script>
+</body>
+</html>
